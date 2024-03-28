@@ -21,6 +21,9 @@ OR CITY LIKE '%A'
 OR CITY LIKE '%I'
 OR CITY LIKE '%O'
 OR CITY LIKE '%U'
+--ex6
+  Select distinct city from Station
+where left(city,1) not in ('a','u','i','o','e')
 --ex7
 select name from Employee
 order by name asc
